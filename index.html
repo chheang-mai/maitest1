@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MaiCoder</title>
+    <link rel="icon" href="">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+</head>
+
+<body>
+    <!-- <header>
+        <nav class="navbar">
+            <div class="logo">
+                <a href="#">Mai<span id="typing-text"></span></a>
+            </div>
+            <div class="menu">
+                <ul class="menu-bar">
+                    <li><a href="">Home</a></li>
+                    <li><a href="">Services <i class="fa-solid fa-caret-down"></i></a>
+                        <div class="dropdown">
+                            <ul>
+                                <li><a href="">HTML5</a></li>
+                                <li><a href="">CSS</a></li>
+                                <li><a href="">PYTHON</a></li>
+                                <li><a href="">PHP</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li><a href="">Contact</a></li>
+                    <li><a href="">Help</a></li>
+                </ul>               
+            </div>       
+        </nav>
+    </header> -->
+
+
+    <div class="cover">
+        <div class="image">
+
+            <header>
+                <nav id="">
+                    <ul>
+                        <li class="hideOnMobile">
+                            <a href="#">
+                                <lord-icon src="https://cdn.lordicon.com/laqlvddb.json" trigger="loop"
+                                    state="loop-3d-roll" colors="primary:#8930e8,secondary:#66d7ee"
+                                    style="width:35px;height:35px">
+                                </lord-icon>&nbsp;
+                                Home</a>
+                        </li>
+                        <li class="hideOnMobile"><a href="">Course</a></li>
+                        <li class="hideOnMobile"><a href="">Business</a></li>
+                        <li class="hideOnMobile"><a href="">Digital</a></li>
+                        <li class="hideOnMobile"><a href="">
+                                <lord-icon src="https://cdn.lordicon.com/ewoezmtb.json" trigger="hover" stroke="bold"
+                                    style="width:35px;height:35px">
+                                </lord-icon>
+                                Search</a></li>
+                        <li class="menu-button" onclick=showSidebar()><a href="#"><svg
+                                    xmlns="http://www.w3.org/2000/svg" height="30px" viewBox="0 -960 960 960"
+                                    width="30px" fill="#5f6368">
+                                    <path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z" />
+                                </svg></a></li>
+                    </ul>
+                    <ul class="sidebar">
+                        <li onclick=hideSidebar()><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="30px"
+                                    viewBox="0 -960 960 960" width="30px" fill="#5f6368">
+                                    <path
+                                        d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z" />
+                                </svg></a></li>
+                        <li><a href="#">Pertional</a></li>
+                        <li><a href="">Course</a></li>
+                        <li><a href="">Business</a></li>
+                        <li><a href="">Digital</a></li>
+                        <li class=""><a href="">
+                                <lord-icon src="https://cdn.lordicon.com/ewoezmtb.json" trigger="hover" stroke="bold"
+                                    style="width:35px;height:35px">
+                                </lord-icon>
+                                Search</a></li>
+
+                    </ul>
+
+                </nav>
+            </header>
+        </div>
+    </div>
+    <div class="container-fluid bg-info p-5 mt-5" id="body">
+        <div class="row">
+            <div class="col-sm-4">
+                <div class="card" style="width: 30rem;">
+                    <a href="" class="big-icon">
+                        <lord-icon
+                        src="https://cdn.lordicon.com/aqmyxbiw.json"
+                        trigger="hover"
+                        colors="primary:#eeca66"
+                        style="width:250px;height:250px">
+                    </lord-icon>
+                    </a>
+
+                    <div class="card-body">
+                        <h4 class="card-title">
+                            <h5>icon</h5>
+                        </h4>
+                        <p class="card-text">
+                            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolorum, dignissimos incidunt
+                            nobis quas hic velit perspiciatis. Modi veritatis a, possimus eaque sunt labore numquam,
+                            cumque velit vel nulla eius minima.
+                        </p>
+                        <a href="#" class="btn btn-primary">View</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-4">
+                <div class="card" style="width: 30rem;">
+                    <a href="" class="big-icon">
+                        <lord-icon src="https://cdn.lordicon.com/bxxiwnhv.json" trigger="hover" stroke="light"
+                            colors="primary:#121331,secondary:#eeca66" style="width:250px;height:250px">
+                        </lord-icon>
+                    </a>
+                    <div class="card-body">
+                        <h4 class="card-title">
+                            <h5>icon</h5>
+                        </h4>
+                        <p class="card-text">
+                            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolorum, dignissimos incidunt
+                            nobis quas hic velit perspiciatis. Modi veritatis a, possimus eaque sunt labore numquam,
+                            cumque velit vel nulla eius minima.
+                        </p>
+                        <a href="#" class="btn btn-primary">View</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-4">
+                <div class="card" style="width: 30rem;">
+                    <a href="" class="big-icon">
+                        <lord-icon src="https://cdn.lordicon.com/xjronrda.json" trigger="hover"
+                            style="width:250px;height:250px">
+                        </lord-icon>
+                    </a>
+                    <div class="card-body">
+                        <h4 class="card-title">
+                            <h5>icon</h5>
+                        </h4>
+                        <p class="card-text">
+                            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolorum, dignissimos incidunt
+                            nobis quas hic velit perspiciatis. Modi veritatis a, possimus eaque sunt labore numquam,
+                            cumque velit vel nulla eius minima.
+                        </p>
+                        <a href="#" class="btn btn-primary">View</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <section class="hidden">
+        <div class="container-fluid" id="">
+            <div class="container-fluid">
+                <h1 class="text-center p-5">Welcome</h1>
+                <div class="row">
+                    <div class="col-lg-3">
+                        <div class="card" style="width: 25rem;">
+                            <img src="..." class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title">Card title</h5>
+                                <p class="card-text">Some quick example text to build on the card title and make up the
+                                    bulk of the card's content.</p>
+                                <a href="#" class="btn btn-primary">Go somewhere</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3">
+                        <div class="card" style="width: 25rem;">
+                            <img src="..." class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title">Card title</h5>
+                                <p class="card-text">Some quick example text to build on the card title and make up the
+                                    bulk of the card's content.</p>
+                                <a href="#" class="btn btn-primary">Go somewhere</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3">
+                        <div class="card" style="width: 25rem;">
+                            <img src="..." class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title">Card title</h5>
+                                <p class="card-text">Some quick example text to build on the card title and make up the
+                                    bulk of the card's content.</p>
+                                <a href="#" class="btn btn-primary">Go somewhere</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-3">
+                        <div class="card" style="width: 25rem;">
+                            <img src="..." class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title">Card title</h5>
+                                <p class="card-text">Some quick example text to build on the card title and make up the
+                                    bulk of the card's content.</p>
+                                <a href="#" class="btn btn-primary">Go somewhere</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+    <section class="hidden">
+        <div class="container-fluid text-black p-5 mt-5">
+            <div class="row">
+                <div class="col-sm-8">
+                    <h1>New pork</h1><br>
+                    <h5>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi recusandae sint dignissimos,
+                        assumenda vitae veniam! Blanditiis, molestiae! Voluptas omnis earum, quos vero, nostrum modi
+                        eius officiis iste dolore rerum quidem!</h5>
+                </div>
+                <div class="col-sm-4">
+                    <img src="https://i.pinimg.com/236x/2f/5c/6a/2f5c6a9ced48728019c4ae101b7faf1d.jpg" alt=""
+                        width="100%" height="400px">
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="hidden">
+        <div class="container-fluid text-black p-5 mt-5">
+            <div class="row">
+                <div class="col-xl-3">
+                    <h1>Heloo</h1>
+                </div>
+                <div class="col-xl-3">
+                    <h1>Sur sdey</h1>
+                </div>
+                <div class="col-xl-3">
+                    <h1>Good job</h1>
+                </div>
+                <div class="col-xl-3">
+                    <h1>Nice to meet you</h1>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+
+</body>
+
+</html>
+<script src="https://cdn.lordicon.com/lordicon.js"></script>
+<script>
+    function showSidebar() {
+        const sidebar = document.querySelector('.sidebar')
+        sidebar.style.display = 'flex';
+    }
+    function hideSidebar() {
+        const sidebar = document.querySelector('.sidebar');
+        sidebar.style.display = 'none';
+    }
+
+</script>
+<!-- scroll -->
+<script>
+    document.addEventListener('scroll', () => {
+        const header = document.querySelector('header');
+        if (window.scrollY > 0) {
+            header.classList.add('scrolled')
+        } else {
+            header.classList.remove('scrolled')
+        }
+    })
+</script>
+<script>
+    const hiddenElements = document.querySelectorAll('.hidden');
+
+    const observer = new IntersectionObserver((entries) => {
+        entries.forEach((entry) => {
+            if (entry.isIntersecting) {
+                entry.target.classList.add('show');
+            } else {
+                entry.target.classList.remove('show');
+            }
+        });
+    });
+
+    hiddenElements.forEach((element) => {
+        observer.observe(element);
+    });
+</script>
+<script>
+    // script.js
+    const textElement = document.getElementById('typing-text');
+    const text = 'Coder'; // Text to type
+    const typingSpeed = 400; // Speed of typing in milliseconds
+    const delayAfterTyping = 1000; // Delay after completing typing before restarting
+
+    function typeText(index) {
+        if (index < text.length) {
+            textElement.textContent += text.charAt(index);
+            setTimeout(() => typeText(index + 1), typingSpeed);
+        } else {
+            // When typing is complete, start the looping effect
+            setTimeout(() => {
+                textElement.textContent = ''; // Clear the text
+                typeText(0); // Restart typing
+            }, delayAfterTyping);
+        }
+    }
+
+    // Start the typing effect
+    typeText(0);
+
+
+</script>

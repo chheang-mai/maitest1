@@ -1,0 +1,260 @@
+/* General styling for the navbar */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    
+}
+*{
+    padding: 0;
+    margin: 0;
+}
+/* .navbar{
+    height: 120px;
+    background-color: rgb(6, 6, 81);
+    position: sticky;
+    position: fixed;
+    top: 0;
+    align-items: center;
+    top: 0; left: 0; right: 0;
+    box-shadow: 0 2px 5px #333;
+    padding: 20px 5%;
+    justify-content: space-between;
+    
+  
+}
+ .logo{
+    padding: 24px 5%;
+    margin: 10px;
+    align-items: center;
+}
+.logo a{
+    font-size: 34px;
+    text-decoration: none;
+    color: white;
+}
+
+    .logo span{
+        font-family: monospace;
+        font-size: 34px;
+        
+        white-space: nowrap;
+        overflow: hidden;
+        display: inline;
+        animation: blink-caret 0.75s step-end infinite;
+    }
+    @keyframes blink-caret {
+        from, to { border-color: transparent; }
+        50% { border-color: black; }
+    }
+
+.logo span{
+    color: #a3b48b;
+}
+.head .menu{
+    height: 10px;
+   align-items: center;
+}
+.menu ul{
+    display: flex;
+    list-style: none;
+    align-items: center;
+    
+}
+.menu ul li {
+    padding: 35px;
+    font-size: 20px;
+   
+    position: relative;
+
+}
+
+.menu ul li a{
+    text-decoration: none;
+    color: white;
+    transition: color 0.3s ease;
+    white-space: nowrap;
+    display: flex;
+    align-items: center;
+    font-size: 1.2rem;
+    font-weight: 700;
+
+}
+.menu ul li a:hover {
+    color: #333;
+    background-color: #fff;
+    border-radius: 10px;
+   
+}
+
+
+.dropdown{
+    display: none;
+}
+  
+.menu ul li:hover .dropdown{
+    display: block;
+    position: absolute;
+    right: 1%;
+    background-color: #333;
+
+}
+.dropdown ul{
+    display: block;
+    margin: 10px;
+}
+.dropdown ul li{
+    width: 100px;
+    padding: 14px;
+
+    
+} */
+ header{
+  padding: 20px 4%;
+  top: 0;
+  align-items: center;
+  height: 95px;
+  position: sticky;
+  transition: background-color 0.4s ease-in-out;
+}
+  header.scrolled{
+    background-color: white;
+    opacity: 0.98;
+  }
+  header.scrolled a{
+    color: black;
+  }
+nav ul{
+    width: 100%;
+  float: left;
+  display: flex;
+  list-style: none;
+  gap: 40px;
+  /* justify-content: center; */
+  align-items: center;
+ 
+}
+ nav ul li{
+    font-size: 20px;
+   
+ }
+ nav li{
+    position: relative;
+ }
+ nav a{
+    text-decoration: none;
+    padding: 15px 15px;
+    color: whitesmoke;
+    transition: color 0.3s ease;
+    white-space: nowrap;
+    display: flex;
+    align-items: center;
+    font-size: 1.4rem;
+    font-weight: 800;
+    transition: color 0.3s ease-in-out;
+
+ }
+ 
+ nav li:hover a{
+    color: #ffbd59;
+
+ }
+ nav li::before{
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 3px;
+    bottom: 5px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #ffbd59;
+    visibility: hidden;
+    transition: all 0.3s ease-in-out 0s;
+}
+nav :hover:before{
+    visibility: visible;
+    width: 100%;
+}
+.sidebar{
+    position: fixed;
+    top: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    z-index: 999;
+    padding: 30px 5%;
+    background-color: black;
+    /* backdrop-filter: blur(10px); */
+    box-shadow: -10px 0 10px rgb(0,0,0,0.1);
+    display: none;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+}
+.sidebar li{
+    width: 100%;
+}
+.sidebar a{
+    width: 100%;
+}
+.menu-button{
+    display: none;
+}
+@media(max-width: 800px){
+    .hideOnMobile{
+        display: none;
+    }
+    .menu-button{
+        display: block;
+    }
+}
+@media(max-width : 350px){
+    .sidebar{
+        width: 100%;
+    }
+   
+}
+ @media(max-width : 400px){
+    .Navbar{
+        width: 100%;
+    }
+ }
+.image {
+    min-width: 100%;
+    position: relative;
+    height: 100vh;
+    background-image: url(/video/myCover.png);
+    background-size: cover; 
+    background-repeat: no-repeat;
+    background-position: 10%;
+    
+    /* background-attachment: fixed; */
+    
+}
+.bigicon {
+   margin: 0 auto;
+}
+.big-icon lord-icon{
+    display: flex;
+    justify-content: center;
+}
+
+
+section{
+    display: grid;
+    place-items: center;
+    align-content: center;
+    height: 110vh;
+}
+.hidden {
+    opacity: 0;
+    transform: translate(-100%);
+    transition: all 4s;
+  }
+  
+  .hidden.show {
+    opacity: 1;
+    transform: translateX(0);
+  }
+/* From Uiverse.io by vnuny */ 
+/* From Uiverse.io by boryanakrasteva */ 
+/* From Uiverse.io by Shaidend */ 
